@@ -1,0 +1,121 @@
+<!--
+  In the past, the DOCTYPE was needed to specify HTML versions.
+  As of HTML5, providing `html` is sufficient.
+  It is somewhere between a proper HTML tag, and an HTML comment.
+-->
+<!DOCTYPE html>
+<!-- Add the appropriate language for your site -->
+<html lang="en">
+<head>
+  <!--
+    UTF-8 is a character set including many universal characters.
+    This is an essential tag for all websites, to avoid seeing
+    weird boxes like ▢▢▢
+  -->
+  <meta charset="utf-8">
+  <!--
+    This critical tag ensures that items on the screen scale
+    correctly on mobile devices. Without this tag, content may
+    appear VERY tiny.
+  -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--
+    Set your name and a brief description.
+    Used by search engines.
+  -->
+  <meta name="author" content="Your name">
+  <meta name="description" content="Brief description">
+  <!--
+    `og` stands for Open Graph, which is a protocol for how your
+    website appears when linked to from another site. These tags
+    are critical to ensuring your site gains an appropriate card
+    when sharing on social media.
+  -->
+ <!-- Insert OG Markup -->
+ <meta property="og:title" content="Ruby McCarthy | August, Alaska" />
+ <meta property="og:type" content="website" />
+ <meta property="og:url" content="https://betweenbrackets.github.io/ruby-mccarthy-august-alaska/" />
+ <meta property="og:site_name" content="August, Alaska">
+ <meta property="og:image" content ="images/august-alaska-image.png" />
+ <meta property="og:description" content="A poem by Ruby McCarthy"/>
+  <!--
+    `twitter` is similar to Open Graph, but specific to Twitter.
+    There are multiple card types you can choose from.
+    Learn more on Twitter's documentation:
+    https://developer.twitter.com/en/docs/tweets/optimize-with-cards/guides/getting-started
+  -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image:alt" content="">
+  <!-- Include one or more CSS files -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  
+  <!-- FONT -->
+  <!-- <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css"> -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"> 
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;400&display=swap" rel="stylesheet">
+  
+  <!--
+    A favicon is the small picture that shows up in the browser's
+    tab. Historically, these used a proprietary ".ico" format, and
+    you needed to provide many different sizes.
+    Happily, you can now provide a single vector graphic in SVG
+    format. It will scale to any size, and still look crisp.
+  -->
+  <link rel="icon" type="image/svg+xml" href="images/mountain-light.svg">
+  
+  <!-- This title shows up in the page's tab, next to the favicon -->
+  <title>Ruby McCarthy | August, Alaska</title>
+</head>
+<body>
+ <!-- Primary Page Layout -->
+  <main class="container">
+    <div class="row">
+      <div class="two-third column" style="margin-top: 25%">
+        <h4>August, Alaska</h4>
+        <p class = "mountain">Winter's chill traces the far horizon <br/>
+          That thief in the wick gutters the daylight<br/>
+          <br/>
+          The marsh grasses rise green <br/>
+          The berries tip the bucket full <br/>
+          The mornings come cool and new <br/>
+          as sunrise and sunset separate <br/>
+          
+          Not autumn, the flaming pyre of summer <br/>
+          When the sun flies high, long, lazy circles of blue sky <br/>
+          Made by eagles when salmon run the water black<br/>
+          <br/>
+          Here, the arrogant chariot of the sun will be chained to the mountains <br/>
+          To circle low and weak, eaten continuously by the jagged peaks <br/>
+          Only the stubble will remain of day <br/>
+          <br/>
+          Here Apollo, first son of Olympus, fails against Demeter's grief <br/>
+          As the shades and the dusk, slender and awkward at first, <br/>
+          Become deeper and thicker until darkness clenches its fist <br/>
+          <br/>
+          Just as the shadows grow longer and linger <br/>
+          At day's end <br/>
+          The unmistakable chill of December <br/>
+          Reaches back into the morning of August <br/>
+          Baked off by the afternoon galloping its length <br/>
+          <br/>
+          Like ants, we scurry <br/>
+          Like grasshoppers, sing <br/>
+        </p>
+      </div>
+      <section style = "text-align: center;">
+        <p>Written by Ruby McCarthy <br/>
+        Published by <i>The Round</i> <br/>
+        Copyright <script type="text/javascript">
+          document.write(new Date().getFullYear());</script> <br>
+        All rights reserved
+      </p>
+      </section>
+    </div> <!-- close of row -->
+  </main> <!-- close of container  -->
+  <!-- If necessary, include JS -->
+  <script src="script.js"></script>
+<!-- End Document --> 
+</body>
+</html>
